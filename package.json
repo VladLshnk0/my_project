@@ -1,5 +1,5 @@
 {
-  "name": "norsea",
+  "name": "dekketbord",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,31 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@egjs/react-view360": "^4.0.0-beta.7",
-    "@google-cloud/translate": "^8.1.0",
-    "@googlemaps/js-api-loader": "^1.16.6",
-    "@next/third-parties": "^14.2.5",
-    "@react-email/components": "^0.0.16",
-    "@react-google-maps/api": "^2.19.3",
-    "@types/react-google-recaptcha": "^2.1.9",
-    "framer-motion": "^11.0.25",
-    "next": "^14.2.5",
-    "next-share": "^0.27.0",
-    "node-mailjet": "^6.0.5",
+    "@react-google-maps/api": "^2.20.3",
+    "@types/woocommerce__woocommerce-rest-api": "^1.0.5",
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "next": "14.2.5",
     "react": "^18",
     "react-click-away-listener": "^2.2.3",
     "react-dom": "^18",
-    "react-google-recaptcha": "^3.1.0",
-    "resend": "^3.2.0",
-    "sharp": "^0.33.3"
+    "sharp": "^0.33.5",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "zustand": "^5.0.0-rc.2"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
 }

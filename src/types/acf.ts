@@ -1,306 +1,329 @@
-import { Option } from "./ContactUsACF";
-
-//----------------Header----------------
-export type HeaderACF = {
-    acf: {
-        available_languages: string;
-        logo: string;
-        navigation:ItemsNavigationsACF[];
-        search_text: string;
-        contact_us: LinkACF;
-    }
+export type ImageWP = {
+  ID: number;
+  id: number;
+  title: string;
+  filename: string;
+  filesize: number;
+  url: string;
+  link: string;
+  alt: string;
+  author: string;
+  description: string;
+  caption: string;
+  name: string;
+  status: string;
+  uploaded_to: number;
+  date: string;
+  modified: string;
+  menu_order: number;
+  mime_type: string;
+  type: string;
+  subtype: string;
+  icon: string;
+  width: number;
+  height: number;
+  sizes: {
+    thumbnail: string;
+    "thumbnail-width": number;
+    "thumbnail-height": number;
+    medium: string;
+    "medium-width": number;
+    "medium-height": number;
+    medium_large: string;
+    "medium_large-width": number;
+    "medium_large-height": number;
+    large: string;
+    "large-width": number;
+    "large-height": number;
+    "1536x1536": string;
+    "1536x1536-width": number;
+    "1536x1536-height": number;
+    "2048x2048": string;
+    "2048x2048-width": number;
+    "2048x2048-height": number;
+    woocommerce_thumbnail: string;
+    "woocommerce_thumbnail-width": number;
+    "woocommerce_thumbnail-height": number;
+    woocommerce_single: string;
+    "woocommerce_single-width": number;
+    "woocommerce_single-height": number;
+    woocommerce_gallery_thumbnail: string;
+    "woocommerce_gallery_thumbnail-width": number;
+    "woocommerce_gallery_thumbnail-height": number;
+  };
 };
 
-export type ItemsNavigationsACF = {
-    link: LinkACF;
-    sub_menu: SubMenuACF[] | false;
+export type TopSectionHomePage = {
+  title: string;
+  text: string;
 };
 
-export type SubMenuACF = {
-    sub_link: LinkACF;
-};
-//----------------Header----------------
-
-
-//----------------Home------------------
-
-export type HomeACF = {
-    acf: {
-        hero_block: HeroBlockACF;
-        title_block: TitleBlockACF;
-        invest_block: InvestBlockACF;
-        benefits_block: BenefitsBlockACF;
-        industrial_block: IndustrialBlockACF;
-        about_block: AboutBlockACF;
-        virtual_tur: VirtualTurACF;
-        news_block: NewsBlockACF;
-        contact_block: ContactBlockACF;
-    }
+export type Category = {
+  title: string;
+  image: ImageWP;
 };
 
-export type IndustrialBlockACF = {
-    title: string;
-    description: string;
-    title_description_2: string;
-    description_2: string;
-    description_3: string;
-    shema_image: string;
-    content_id: string;
-    button_1: LinkACF;
-    button_2: LinkACF;
-    bg_image: string;
+export type Categories = {
+  glass: Category;
+  plates: Category;
+  napkins: Category;
+  cutlery: Category;
+  candle_holder: Category;
+  dish_serving: Category;
+  salt: Category;
+  coffee_equipment: Category;
 };
 
-export type VirtualTurACF = {
-    title: string;
-    sub_title: string;
-    paragraphs: ParagraphsACF[];
-    images: ImageACF[];
-    button_text: string;
-    content_id: string;
+export type CategoriesHomePage = {
+  title: string;
+  categories_list: Categories;
 };
 
-export type ImageACF = {
-    image: string;
+export type AboutUsHomePage = {
+  small_title: string;
+  big_title: string;
+  text: string;
+  button_text: string;
+  video_one: string;
+  video_two: string;
 };
 
-export type HeroBlockACF = {
-    video_url: string;
-    video_mobile_url: string;
-    title: string;
-    contact_button_text: string;
-    get_started_text: string;
-    content_id: string;
+export type PopularProductsHomePage = {
+  title: string;
+  button_text: string;
 };
 
-export type TitleBlockACF = {
-    title: string;
-    description: string;
-    text_on_button: string;
-    sites: SitesACF[];
-    content_id: string;
+export type PopularProduct = {
+  product_name: string;
+  product_price: string;
+  product_material: string;
+  product_image: string;
 };
 
-export type SitesACF = {
-    image: string;
-    link: LinkACF;
-};
-
-export type LinkACF = {
-    link_text: string;
-    link_url: string;
-};
-
-export type InvestBlockACF = {
-    title: string;
-    articles: ArticlesACF[];
-    content_id: string;
-};
-
-export type ArticlesACF = {
-    text_number: string;
-    title: string;
-    description: string;
-    link: LinkACF;
-    content_id: string;
-};
-
-export type AboutBlockACF = {
-    image: string;
-    title: string;
-    description: string;
-    link: LinkACF;
-    content_id: string;
-};
-
-export type NewsBlockACF = {
-    title: string;
-    text_on_button: string;
-    content_id: string;
-};
-
-export type ParagraphsACF = {
-    paragraph: string;
-    content_id: string;
-};
-
-export type ContactBlockACF = {
-    background_image: string;
-    title: string;
-    description: string;
-    email: string;
-    phone: string;
-    address: string;
-    form: FormACF;
-    text_before_options: string;
-    options: Option[];
-    pdf: string;
-    content_id: string;
-};
-
-export type FormACF = {
-    text_about_pdf: string;
-    company_text: string;
-    position_text: string;
-    first_name_text: string;
-    last_name_text: string;
-    email_text: string;
-    phone_text: string;
-    message_text: string;
-    text_agreement: string;
-    text_on_button: string;
-};
-//----------------Home------------------
-//----------------Footer----------------
-export type FooterACF = {
-    acf: {
-        media_links: MediaLinksACF;
-        navigation_group: {
-            column: ColumnACF[];
-        };
-        footer_group: FooterGroupACF;
-    }
-};
-
-export type FooterGroupACF = {
-    all_right_text: string;
-    link_privacy_policy: LinkACF;
-    link_terms: LinkACF;
-};
-
-export type MediaLinksACF = {
-    facebook_url: string;
-    linkedin_url: string;
-};
-
-export type ColumnACF = {
-    title: string;
-    footer_links: LinkACF[];
-};
-//----------------Footer----------------
-
-//----------------Posts-------------------
-export type PostsACF = {
-    acf: PostACF;
-};
-
-export type PostACF = {
-    slug: string;
-    banner: string;
-    logo: string;
-    title: string;
-    sub_title: string;
-    image: string;
-    description: string;
-    link: LinkACF;
-    paragraphs: ParagraphsACF[];
-    web_site: LinkACF;
-    gallery_text: string;
-    gallery: GalleryACF[];
-    other_sites_text: string;
-    content_id: string;
-};
-
-export type GalleryACF = {
-    image: string;
-};
-//----------------Posts-------------------
-//----------------Invest------------------
-
-export type InvestACF = {
-    acf: {
-        hero_block: HeroBlockInvestACF;
-        description_block: DescriptionBlockACF;
-        benefits_block: BenefitsBlockACF;
-        values_block: ValuesBlockACF;
-        map_block: MapBlockACF;
-        team_block: TeamBlockACF;
-        contact_block: ContactBlockInvestACF;
-    };
-};
-
-export type HeroBlockInvestACF = {
-    title: string;
-    image: string;
-    content_id: string;
-};
-
-export type DescriptionBlockACF = {
-    title: string;
-    paragraphs: ParagraphsACF[];
-    articles: ArticlesInvestACF[];
-    content_id: string;
-};
-
-export type ArticlesInvestACF = {
-    title: string;
-    link_url: string;
-    paragraphs: ParagraphsACF[];
-    image: string;
-    content_id: string;
-};
-
-export type BenefitsBlockACF = {
-    title: string;
-    benefits: BenefitsACF[];
-    content_id: string;
-};
-
-export type BenefitsACF = {
+export type ConditionsHomePage = {
+  title: string;
+  // conditions_image: string;
+  order: {
+    name: string;
     title: string;
     text: string;
     image: string;
-    content_id: string;
-};
-
-export type ValuesBlockACF = {
+  };
+  transport: {
+    name: string;
     title: string;
-    sub_title: string;
+    text: string;
     image: string;
-    lists: ValuesACF[];
-    content_id: string;
-};
-
-export type ValuesACF = {
+  };
+  return: {
+    name: string;
     title: string;
-    description: string;
+    text: string;
     image: string;
-    content_id: string;
-};
-
-export type MapBlockACF = {
+  };
+  payment: {
+    name: string;
     title: string;
-    description: string;
-    button_text: string;
-    default_image: string;
-    source_url: string;
-    content_id: string;
-};
-
-export type TeamBlockACF = {
-    title: string;
-    description: string;
-    teams: MembersACF[];
-    content_id: string;
-};
-
-export type MembersACF = {
-    full_name: string;
-    position: string;
-    foto: string;
-    description: string;
-    email: string;
-    phone: string;
-    linkedin_url: string;
-    content_id: string;
-};
-
-export type ContactBlockInvestACF = {
-    title: string;
-    description: string;
-    button_text: string;
+    text: string;
     image: string;
-    content_id: string;
+  };
 };
 
-//----------------Invest------------------
+export type VideoSectionHomePage = {
+  text: string;
+  button_text: string;
+  video: string;
+};
+
+export type ContactInfoHomePage = {
+  title: string;
+  text: string;
+  address_title: string;
+  address: string;
+  phone_title: string;
+  phone: string;
+  email_title: string;
+  email: string;
+  image: ImageWP;
+};
+
+export type HomeACF = {
+  acf: {
+    top_section: TopSectionHomePage;
+    categories: CategoriesHomePage;
+    about_us: AboutUsHomePage;
+    popular_products: PopularProductsHomePage;
+    conditions: any;
+    video_section: VideoSectionHomePage;
+    contact_us: ContactInfoHomePage;
+  };
+};
+
+export type BetingelserACF = {
+  acf: {
+    top_section: {
+      title: string;
+      image: string;
+    };
+    informasjon: {
+      bestilling: InformasjonACF;
+      leieperiode: InformasjonACF;
+      transport: InformasjonACF;
+      tilbakelevering: InformasjonACF;
+      betaling: InformasjonACF;
+    };
+    kontakt_oss: {
+      title1: string;
+      title2: string;
+      image: string;
+      button_text: string;
+    };
+  };
+};
+
+export type InformasjonACF = {
+  number: string;
+  title: string;
+  subtitle1: string;
+  paragraph1: string;
+  subtitle2: string;
+  paragraph2: string;
+  subtitle3: string;
+  paragraph3: string;
+  subtitle4: string;
+  paragraph4: string;
+  subtitle5: string;
+  paragraph5: string;
+};
+
+export type InfoContactUs = {
+  title: string;
+  text: string;
+  address_title: string;
+  address: string;
+  phone_title: string;
+  phone: string;
+  email_title: string;
+  email: string;
+  image: ImageWP;
+};
+
+export type BottomSectionContactUs = {
+  button_text: string;
+  bottom_text: string;
+  bottom_image: ImageWP;
+};
+
+export type ContactUsACF = {
+  acf: {
+    info: InfoContactUs;
+    bottom_section: BottomSectionContactUs;
+  };
+};
+
+export type TopSectionPartners = {
+  title: string;
+  text: string;
+  image_1: ImageWP;
+  image_2: ImageWP;
+  image_3: ImageWP;
+  image_4: ImageWP;
+  image_5: ImageWP;
+};
+
+export type Partner = {
+  name: string;
+  description: string;
+  logo: string;
+  photo: string;
+  link: string;
+};
+
+export type PartnersSectionPartners = {
+  partner_1: Partner;
+  partner_2: Partner;
+  partner_3: Partner;
+  partner_4: Partner;
+  partner_5: Partner;
+  partner_6: Partner;
+};
+
+export type ContactUsPartners = {
+  text: string;
+  button_text: string;
+  background: ImageWP;
+};
+
+export type PartnersACF = {
+  acf: {
+    top_section: TopSectionPartners;
+    partners: PartnersSectionPartners;
+    contact_us: ContactUsPartners;
+  };
+};
+
+export type TopSectionAboutUs = {
+  title: string;
+  text: string;
+  background: ImageWP;
+  button_text: string;
+};
+
+export type OurHistoryType = {
+  name: string;
+  title: string;
+  text: string;
+  image: ImageWP;
+};
+
+export type OurTeamType = {
+  title: string;
+  text: string;
+  image: ImageWP;
+};
+
+export type OurServicesType = {
+  name: string;
+  service_1: {
+    title: string;
+    text: string;
+    image: string;
+  };
+  service_2: {
+    title: string;
+    text: string;
+    image: ImageWP;
+  };
+};
+
+export type OurVisionType = {
+  name: string;
+  title_1: string;
+  text_1: string;
+  title_2: string;
+  text_2: string;
+  video_1: string;
+  video_2: string;
+  video_3: string;
+};
+
+export type OurWorkType = {
+  name: string;
+  title: string;
+  text: string;
+  image_1: ImageWP;
+  image_2: ImageWP;
+  image_3: ImageWP;
+};
+
+export type AboutUsACF = {
+  acf: {
+    top_section: TopSectionAboutUs;
+    our_history: OurHistoryType;
+    our_team: OurTeamType;
+    our_services: OurServicesType;
+    our_vision: OurVisionType;
+    our_work: OurWorkType;
+    contact_us: ContactUsPartners;
+  };
+};
