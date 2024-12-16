@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "norsea-atlantic",
+  "private_key_id": "7dd36cceb8dc96c51fa9ba4569b7f61f9b067932",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCz48ooEciyco+u\nASeB+SDvJ9WZrqViufMvX1p4Mr9Oa/XW12jU9gOePkn8yaKDyDF2azBkdujBLcpQ\nTBAvySaCS8Ni/xfVT4ZHQpc3mKtR6xNZdzbmHDXrLdcoTpi1sWkugp5enu2aH8/G\nDGSRMHEq0fI5eFsH8cBqzMyPX3mR0edBTzLjbC+iauQJliaYyHQX4vBJdf1wybkm\nccPYD0UTDQatCfxIFLZUUC7Dywv2No9JfbmrC3jRm4lOyWI9m+6RmKi/Nk8OEAIl\nSr5ebRMRwztfFpRQ+5AvSjqiBL8Q+jcq8wTkDWiK9Te5THyFu++IGemuopLuJIf+\nBemT2kaNAgMBAAECggEAQdJbqgW31fOtNxIdDqXFszx0H+OTiGhZ3z+YrtqCvYMr\nVQ1EwoeyEzjfgauV13ps/tOBxYDs8aJ7oJ30XkfP22U1fQeyBM8wZuqqwiEOrs7B\nKb9BSzmPURpY29rGbdUYk3gf0qd8cSSqteDa+3UqM2zWoMi1JlcC/REq2Fsq9Hun\nSa9hsuRdAWI1OkYkCQGF1f6VgC4rGxK1DrJ0NlZFquGAbBGNI5mlmzF/MWTq4D/a\n1eTPBlduT9T3DG/NzWEAzXAFPmIhcnBk/yFQdf0hjsl1hmXpT8yl/8oS2zzQBT8k\nZXr6ek/LmRa12DH6PGWQ9ZUc+WkJ8tvMiEA2XWRfUQKBgQDzHdfHYA3tIQJ5f//B\nGyWR9tm2pg+Hvo0eZapX3qrNMWBNLniEg/2wwBoCZW4+he3pMgQM7R7HkdQaDbqi\nEMdkBweH5NV42TSK0rnJc2n+ZEf5/iwEMVMAAXatQvuFGxa4c8A1+Mx3rcLki6eq\nr7Wzo1QlUcky2GW6gfciLn7YuwKBgQC9bDPfIGeytVebNn7is+/YWvp/jhhoXCEw\nMiifrZy1BNPY6BB+gCniIIpxLHwvjlEoBBee32ts+eIXvgRDxVUuBasw1zmYXhaH\ngwI1G2Bux8D8HfcT7WCBW02x8/wq3VgDCxKGnDrxMjwdeHXHTlGWxetcRTaZ56aj\nw5N4NXVtVwKBgQCxpFm57h7e6SLUwsmPQZXHPRdCFb79UiftUR4SDLrDKlQSsWUQ\ndx2U3BllLNZMSzJXFdvN0imOa6kOzH9V0mrPVS+UhYnSPuvckDN+1p1Za88IBUgG\nXEAonekomuwMC4ojhziodz54KHhi5QTDfJaJR0vB5Svdwi87A6If0NeQ5wKBgQCg\njpyRHiiHg8pUF6cJhbdgzgzSHaF2o9DFx15DqqbPkN34VwvUDdJyh16Re0FwFdOY\ndY+H7Jxj7JLFyRxYTWVb8xYd+fApxGaYSmWOmjvs6ogbq1KIo4ZPXxLGKaautpsp\nSTNUwgv78baezEIYw7vIbs6GkWwsm/vVh6ryE24LVQKBgG4FzvPGAsWJknTqVc+C\nho00M5KC+dUbgRz9845PO8rdwT25s1T/xBsii337buwRuzBmlmdsytbVIG5AqdwA\nVdJ9S/RcdUinsXWYqXIuRySze+iMATED6B+600YW7/gwr34YGD0/UonEhMwpdBmE\nKsnXEooBL3/UbiXTamn1TbQ/\n-----END PRIVATE KEY-----\n",
+  "client_email": "norsea-translate@norsea-atlantic.iam.gserviceaccount.com",
+  "client_id": "111876378355337022439",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/norsea-translate%40norsea-atlantic.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
